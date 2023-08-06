@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a05427530d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./movie.css" />
             <title>Movie Website</title>
 </head>
@@ -26,8 +27,8 @@
    </header>
 
    <div class="banner">
-    <div class="content active">
-        <img src="the-little-mermaid-title.png" alt="" class="movie-title">
+    <div class="content the-little-mermaid active">
+        <img src="./images/the-little-mermaid-title.png" alt="" class="movie-title">
         <h4>
             <span>2023</span>
             <span><i>12+</i></span>
@@ -42,8 +43,103 @@
 
         </div>
     </div>
-    <div class="carousel-box"></div>
-    <a href="#" class="play"><i class="fa fa-play-circle-o" aria-hidden="true"></i>Watch Trailer</a>
+    <div class="content bg-65">
+        <img class="movie-title" src="./images/the-65-title.png" alt="Movie Name"/>
+        <h4> 
+            <span>2023</span>
+            <span><i>15+</i></span>
+            <span>1h 33min</span>
+            <span>Action</span>
+        </h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia tempore dolore ipsum? Debitis odio laboriosam cupiditate repudiandae nobis quibusdam sed eveniet, atque perspiciatis laborum. Veniam ut recusandae voluptates dolorum tenetur officia maxime autem alias, necessitatibus laudantium aliquam ex magni esse temporibus libero dolore modi. Odio deleniti placeat distinctio magni.</p>
+
+        <div class="button">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+
+    </div>
+   </div>
+   <div class="content the-covenant">
+    <img class="movie-title" src="./images/the-covenant-title.png"alt="Movie Name"/>
+    <h4> 
+        <span>2023</span>
+        <span><i>12+</i></span>
+        <span>2h 03min</span>
+        <span>War/Action</span>
+    </h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia tempore dolore ipsum? Debitis odio laboriosam cupiditate repudiandae nobis quibusdam sed eveniet, atque perspiciatis laborum. Veniam ut recusandae voluptates dolorum tenetur officia maxime autem alias, necessitatibus laudantium aliquam ex magni esse temporibus libero dolore modi. Odio deleniti placeat distinctio magni.</p>
+
+    <div class="button">
+        <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+
+</div>
+</div>
+<div class="content the-black-demon">
+    <img class="movie-title" src="./images/the-black-demon-title.png" alt="Movie Name"/>
+    <h4> 
+        <span>2023</span>
+        <span><i>16+</i></span>
+        <span>1h 40min</span>
+        <span>Thriller</span>
+    </h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia tempore dolore ipsum? Debitis odio laboriosam cupiditate repudiandae nobis quibusdam sed eveniet, atque perspiciatis laborum. Veniam ut recusandae voluptates dolorum tenetur officia maxime autem alias, necessitatibus laudantium aliquam ex magni esse temporibus libero dolore modi. Odio deleniti placeat distinctio magni.</p>
+
+    <div class="button">
+        <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+
+</div>
+</div>
+<div class="content the-tank">
+    <img class="movie-title" src="./images/the-tank-title.png" alt="Movie Name"/>
+    <h4> 
+        <span>2023</span>
+        <span><i>15+</i></span>
+        <span>1h 40min</span>
+        <span>Horror</span>
+    </h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia tempore dolore ipsum? Debitis odio laboriosam cupiditate repudiandae nobis quibusdam sed eveniet, atque perspiciatis laborum. Veniam ut recusandae voluptates dolorum tenetur officia maxime autem alias, necessitatibus laudantium aliquam ex magni esse temporibus libero dolore modi. Odio deleniti placeat distinctio magni.</p>
+
+    <div class="button">
+        <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+        <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+
+</div>
+</div>
+
+
+    <div class="carousel-box">
+        <div class="carousel">
+
+            <div class="carousel-item"  onClick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');">
+                <img src="./images/movies/the-little-mermaid.jpeg" alt="">
+            </div>
+
+            <div class="carousel-item" onClick="changeBg('bg-65.jpeg', 'bg-65');">
+                <img src="./images/movies/65.jpg" alt="">
+            </div>
+
+            <div class="carousel-item" onClick="changeBg('bg-the-covenant.jpeg', 'the-covenant');">
+                <img src="./images/movies/the-covenant.jpg" alt="">
+            </div>
+
+            <div class="carousel-item" onClick="changeBg('bg-the-black-demon.jpeg', 'the-black-demon');">
+                <img src="./images/movies/the-black-demon.jpg" alt="">
+            </div>
+
+            <div class="carousel-item" onClick="changeBg('bg-the-tank.jpeg', 'the-tank');">
+                <img src="./images/movies/the-tank.jpeg" alt="">
+            </div>
+
+
+        </div>
+    </div>
+    <a href="#" class="play"  onclick="toggleVideo();"><i class="fa fa-play-circle-o" aria-hidden="true"></i>Watch Trailer</a>
 
     <ul class="sci">
         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -53,19 +149,22 @@
     </ul>
 
    </div>
+   
 
 
 
-
-
-
-
-
-
-
+<div class="trailer">
+    <video src="video.mp4" muted controls="true" autoplay="true"></video>
+    <img class="close" src="close.png" alt="" onclick="toggleVideo();"/>
+</div>
     <script src="http://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./movie.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.carousel').carousel();
+      });
+      </script>
 
     
 </body>
